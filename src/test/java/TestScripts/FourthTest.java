@@ -27,7 +27,7 @@ public class FourthTest extends BaseClass
 	  soft.assertTrue(contact.getPageHeader().isDisplayed());
 	    
 	    List<String>data=excel.fetchDatafromExcel("Sheet1");
-	    contact.submitDetails(data.get(1), data.get(2),data.get(3),data.get(4));
+	    contact.submitDetails(data.get(0), data.get(1),data.get(2),data.get(3));
 	    soft.assertAll();
 	    
 		}
