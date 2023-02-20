@@ -12,6 +12,7 @@ public class FourthTest extends BaseClass
  @Test
  
 		public void fourthTest()
+		
 		{
 	      SoftAssert soft=new SoftAssert();
 	      
@@ -26,7 +27,7 @@ public class FourthTest extends BaseClass
 	    
 	  soft.assertTrue(contact.getPageHeader().isDisplayed());
 	    
-	    List<String>data=excel.fetchDatafromExcel("Sheet1");
+	    List<String> data=excel.fetchDatafromExcel("sheet1");
 	    contact.submitDetails(data.get(0), data.get(1),data.get(2),data.get(3));
 	    soft.assertAll();
 	    

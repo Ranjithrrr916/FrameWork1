@@ -1,6 +1,7 @@
 package GenericLibraries;
 
 import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -67,7 +68,7 @@ public class ExcelUtility
 	{
 	  List<String>dataList=new ArrayList<>();
 	  Sheet sheet =wb .getSheet(sheetName);
-	  for (int i = 0; i <sheet.getLastRowNum();  i++)
+	  for (int i = 0; i <4;  i++)
 	  {
 		String data=sheet.getRow(i).getCell(1).getStringCellValue();
 		dataList.add(data);
