@@ -27,5 +27,6 @@ public class SecondTest extends BaseClass
 	  
 	  soft.assertAll(); 
 	  
+	  
    }
 }

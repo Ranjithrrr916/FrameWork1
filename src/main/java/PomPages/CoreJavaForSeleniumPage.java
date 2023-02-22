@@ -16,14 +16,15 @@ public class CoreJavaForSeleniumPage
 			@FindBy(xpath="//a[text()=' Core Java For Selenium Trainin']")
 			 private WebElement coreJavaSeleniumLink;
 			
-			//initialization
+	//initialization
 			
 			public CoreJavaForSeleniumPage(WebDriver driver)
 			{
 				PageFactory.initElements(driver, this);
 			}
 			
-			//Utilization
+	//Utilization
+			
 			public String getPageHeader()
 			{
 				return pageHeader.getText();
